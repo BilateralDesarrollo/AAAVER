@@ -1,0 +1,37 @@
+/* Importación de Fuentes */
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../Fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../Fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    /* Paleta de Colores */
+    --azul-oscuro: #002b70;
+    --azul-marino: #002d6a;
+    --celeste-pastel: #7fb1d8;
+    --cian: #27a7c4;
+    --blanco: #ffffff;
+    --gris-texto: #6d6d6d;
+
+    /* Familias Tipográficas */
+    --font-black: 'Montserrat-Black', sans-serif;
+    --font-bold: 'Montserrat-Bold', sans-serif;
+    --font-semibold: 'Montserrat-SemiBold', sans-serif;
+    --font-medium: 'Montserrat-Medium', sans-serif;
+}
