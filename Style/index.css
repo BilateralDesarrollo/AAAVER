@@ -185,10 +185,9 @@ header {
 .hero-section {
     position: sticky;
     top: 90px;
-    z-index: 1;
     background: var(--azul-oscuro);
     height: 650px;
-    overflow: hidden;
+    z-index: 3;
 }
 
 .hero-slider {
@@ -207,12 +206,12 @@ header {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    z-index: 1;
+    pointer-events: none;
 }
 
 .hero-slide.active {
     opacity: 1;
-    z-index: 2;
+    pointer-events: auto;
 }
 
 .hero-background {
@@ -452,13 +451,14 @@ header {
 
 /* ================= BIENVENIDOS ================= */
 .welcome-section {
-    background-size: cover;
-    background-position: top center;
-    background-repeat: repeat;
-    padding: 100px 0 120px 0;
     position: relative;
     z-index: 2;
     background-color: var(--blanco);
+    background-image: url('../Elementos/Home/FONDO_BIENVENIDOS.png'); 
+    background-position: center top; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    padding: 100px 0 120px 0;
     box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.15);
 }
 
