@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'Identa-DarkGrayItalic';
+    src: url('../Fonts/Identa-DarkGrayItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
     font-family: 'Identa-Gray';
     src: url('../Fonts/Identa-Gray.otf') format('opentype');
     font-weight: 400; 
@@ -36,7 +43,7 @@
 @font-face {
     font-family: 'Montserrat-Black';
     src: url('../Fonts/Montserrat-Black.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -80,6 +87,7 @@
     /* Familias Tipográficas - Identa */
     --font-identa-black: 'Identa-Black', sans-serif;
     --font-identa-darkgray: 'Identa-DarkGray', sans-serif;
+    --font-identa-darkgrayitalic: 'Identa-DarkGrayItalic', sans-serif;
     --font-identa-gray: 'Identa-Gray', sans-serif;
     --font-identa-grayitalic: 'Identa-GrayItalic', sans-serif;
     --font-identa-light: 'Identa-Light', sans-serif;
