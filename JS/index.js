@@ -39,3 +39,27 @@ dropdownItems.forEach(item => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollElements = document.querySelectorAll('.scroll-fade-down, .scroll-fade-right');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -100px 0px',
+        threshold: 0.5 
+    };
+
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            } else {
+                entry.target.classList.remove('is-visible');
+            }
+        });
+    }, observerOptions);
+
+    scrollElements.forEach(el => {
+        scrollObserver.observe(el);
+    });
+});
