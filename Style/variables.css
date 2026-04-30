@@ -1,4 +1,38 @@
-/* Importación de Fuentes */
+@font-face {
+    font-family: 'Identa-Black';
+    src: url('../Fonts/Identa-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Identa-DarkGray';
+    src: url('../Fonts/Identa-DarkGray.otf') format('opentype');
+    font-weight: 600; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Identa-Gray';
+    src: url('../Fonts/Identa-Gray.otf') format('opentype');
+    font-weight: 400; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Identa-GrayItalic';
+    src: url('../Fonts/Identa-GrayItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Identa-Light';
+    src: url('../Fonts/Identa-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'Montserrat-Black';
     src: url('../Fonts/Montserrat-Black.ttf') format('truetype');
@@ -10,6 +44,13 @@
     font-family: 'Montserrat-Bold';
     src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../Fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -29,9 +70,17 @@
     --blanco: #ffffff;
     --gris-texto: #6d6d6d;
 
-    /* Familias Tipográficas */
+    /* Familias Tipográficas - Montserrat */
     --font-black: 'Montserrat-Black', sans-serif;
+    --font-extrabold: 'Montserrat-ExtraBold', sans-serif;
     --font-bold: 'Montserrat-Bold', sans-serif;
     --font-semibold: 'Montserrat-SemiBold', sans-serif;
     --font-medium: 'Montserrat-Medium', sans-serif;
+
+    /* Familias Tipográficas - Identa */
+    --font-identa-black: 'Identa-Black', sans-serif;
+    --font-identa-darkgray: 'Identa-DarkGray', sans-serif;
+    --font-identa-gray: 'Identa-Gray', sans-serif;
+    --font-identa-grayitalic: 'Identa-GrayItalic', sans-serif;
+    --font-identa-light: 'Identa-Light', sans-serif;
 }
