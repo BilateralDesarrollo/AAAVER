@@ -1,28 +1,21 @@
 @font-face {
-    font-family: 'Identa-Black';
-    src: url('../Fonts/Identa-Black.otf') format('opentype');
+    font-family: 'Identa-BlackItalic';
+    src: url('../Fonts/Identa-BlackItalic.otf') format('opentype');
     font-weight: 900;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Identa-DarkGray';
     src: url('../Fonts/Identa-DarkGray.otf') format('opentype');
-    font-weight: 600; 
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Identa-DarkGrayItalic';
-    src: url('../Fonts/Identa-DarkGrayItalic.otf') format('opentype');
     font-weight: 600;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Identa-Gray';
     src: url('../Fonts/Identa-Gray.otf') format('opentype');
-    font-weight: 400; 
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -34,9 +27,9 @@
 }
 
 @font-face {
-    font-family: 'Identa-Light';
-    src: url('../Fonts/Identa-Light.otf') format('opentype');
-    font-weight: 300;
+    font-family: 'Identa-SemiBlack';
+    src: url('../Fonts/Identa-SemiBlack.otf') format('opentype');
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -48,23 +41,16 @@
 }
 
 @font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+    font-family: 'MontserratAlternates-Bold';
+    src: url('../Fonts/MontserratAlternates-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat-ExtraBold';
-    src: url('../Fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-family: 'MontserratAlternates-ExtraBold';
+    src: url('../Fonts/MontserratAlternates-ExtraBold.ttf') format('truetype');
     font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat-Medium';
-    src: url('../Fonts/Montserrat-Medium.ttf') format('truetype');
-    font-weight: 500;
     font-style: normal;
 }
 
@@ -79,16 +65,13 @@
 
     /* Familias Tipográficas - Montserrat */
     --font-black: 'Montserrat-Black', sans-serif;
-    --font-extrabold: 'Montserrat-ExtraBold', sans-serif;
-    --font-bold: 'Montserrat-Bold', sans-serif;
-    --font-semibold: 'Montserrat-SemiBold', sans-serif;
-    --font-medium: 'Montserrat-Medium', sans-serif;
+    --font-alt-bold: 'MontserratAlternates-Bold', sans-serif;
+    --font-alt-extrabold: 'MontserratAlternates-ExtraBold', sans-serif;
 
     /* Familias Tipográficas - Identa */
-    --font-identa-black: 'Identa-Black', sans-serif;
+    --font-identa-blackitalic: 'Identa-BlackItalic', sans-serif;
     --font-identa-darkgray: 'Identa-DarkGray', sans-serif;
-    --font-identa-darkgrayitalic: 'Identa-DarkGrayItalic', sans-serif;
     --font-identa-gray: 'Identa-Gray', sans-serif;
     --font-identa-grayitalic: 'Identa-GrayItalic', sans-serif;
-    --font-identa-light: 'Identa-Light', sans-serif;
+    --font-identa-semiblack: 'Identa-SemiBlack', sans-serif;
 }

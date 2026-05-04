@@ -229,11 +229,11 @@ header {
 }
 
 .hero-decoration.left {
-    left: -15%;
+    left: -25%;
 }
 
 .hero-decoration.right {
-    right: -15%;
+    right: -25%;
 }
 
 .hero-content {
@@ -248,7 +248,7 @@ header {
 }
 
 .hero-content h1 {
-    font-family: var(--font-black);
+    font-family: var(--font-gray);
     font-size: 48px;
     line-height: 1.1;
     margin-bottom: 25px;
@@ -257,7 +257,7 @@ header {
 }
 
 .btn-highlight {
-    font-family: var(--font-gray);
+    font-family: var(--font-identa-darkgray);
     background-color: var(--celeste-pastel);
     color: var(--blanco);
     border: none;
@@ -277,13 +277,13 @@ header {
 }
 
 .description {
-    font-family: var(--font-semibold);
+    font-family: var(--font-identa-darkgray);
     font-size: 20px;
     line-height: 1.5;
 }
 
 .btn-certificate {
-    font-family: var(--font-gray);
+    font-family: var(--font-identa-darkgray);
     background: var(--celeste-pastel);
     color: var(--blanco);
     border: none;
@@ -546,8 +546,7 @@ header {
 }
 
 .welcome-text h3 {
-    font-family: var(--font-identa-black);
-    /* CAMBIAR POR SEMI-BLACK */
+    font-family: var(--font-identa-semiblack);
     color: var(--azul-oscuro);
     font-size: 32px;
     margin-bottom: 15px;
@@ -597,7 +596,7 @@ header {
 
 .services-top {
     background-color: var(--azul-oscuro);
-    background-image: url('../Elementos/Home/Servicios/SERVS_FONDO.png');
+    background-image: url('../Elementos/Home/Servicios/ONDAS.png');
     background-size: cover;
     background-position: center;
     padding: 80px 5% 150px 5%;
@@ -619,7 +618,7 @@ header {
 }
 
 .services-title-left h2 {
-    font-family: var(--font-bold);
+    font-family: var(--font-alt-bold);
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -641,8 +640,9 @@ header {
 }
 
 .services-title-center h2 {
-    font-family: var(--font-identa-darkgray);
+    font-family: var(--font-identa-semiblack);
     font-size: 36px;
+    color: var(--celeste-pastel);
     margin-bottom: 15px;
 }
 
@@ -655,7 +655,7 @@ header {
 }
 
 .btn-brochure {
-    font-family: var(--font-identa-darkgray);
+    font-family: var(--font-identa-semiblack);
     background-color: var(--blanco);
     color: var(--azul-oscuro);
     padding: 8px 25px;
@@ -679,6 +679,7 @@ header {
 }
 
 .service-card {
+    font-family: var(--font-identa-darkgray);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     padding: 25px 10px;
