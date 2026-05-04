@@ -685,12 +685,11 @@ header {
     border-radius: 12px;
     margin-top: 40px;
     height: 110px;
-    padding: 0 10px 20px 10px;
-    margin-top: 35px;
+    padding: 5px 10px 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -702,19 +701,36 @@ header {
     background: rgba(0, 45, 106, 0.8);
 }
 
-.service-card.card-admin:hover { border-color: var(--color-admin); }
-.service-card.card-rh:hover { border-color: var(--color-rh); }
-.service-card.card-info:hover { border-color: var(--color-info); }
-.service-card.card-juridico:hover { border-color: var(--color-juridico); }
-.service-card.card-op:hover { border-color: var(--color-op); }
-.service-card.card-os:hover { border-color: var(--color-os); }
+.service-card.card-admin:hover {
+    border-color: var(--color-admin);
+}
+
+.service-card.card-rh:hover {
+    border-color: var(--color-rh);
+}
+
+.service-card.card-info:hover {
+    border-color: var(--color-info);
+}
+
+.service-card.card-juridico:hover {
+    border-color: var(--color-juridico);
+}
+
+.service-card.card-op:hover {
+    border-color: var(--color-op);
+}
+
+.service-card.card-os:hover {
+    border-color: var(--color-os);
+}
 
 .service-card .corner {
     position: absolute;
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 0;
-    max-width: 35px; 
+    max-width: 35px;
 }
 
 .service-card .corner.bottom-left {
@@ -722,6 +738,7 @@ header {
     left: -2px;
     border-bottom-left-radius: 12px;
 }
+
 .service-card .corner.top-right {
     top: -2px;
     right: -2px;
@@ -732,20 +749,21 @@ header {
     opacity: 1;
 }
 
-.service-card > img:not(.corner),
-.service-card > p {
+.service-card>img:not(.corner),
+.service-card>p {
     position: relative;
     z-index: 1;
 }
 
-.service-card .icon-off, .service-card .icon-on {
-position: absolute;
-    top: -28px;
+.service-card .icon-off,
+.service-card .icon-on {
+    position: absolute;
+    top: -35px;
     left: 0;
     right: 0;
-    margin: 0 auto; 
+    margin: 0 auto;
     height: 56px;
-    width: 56px; 
+    width: 56px;
     z-index: 2;
     transition: 0.3s;
 }
@@ -755,11 +773,11 @@ position: absolute;
 }
 
 .service-card:hover .icon-off {
-    display: none; 
+    display: none;
 }
 
 .service-card:hover .icon-on {
-    display: block; 
+    display: block;
     margin: 0 auto;
 }
 
@@ -767,7 +785,7 @@ position: absolute;
     font-family: var(--font-identa-darkgray);
     font-size: 13px;
     line-height: 1.2;
-    margin-top: 15px;
+    margin: 0;
     position: relative;
     z-index: 1;
 }
