@@ -63,6 +63,14 @@
     --blanco: #ffffff;
     --gris-texto: #6d6d6d;
 
+    /* Colores por Área */
+    --color-admin: #7fb1d8;
+    --color-rh: #802b62;
+    --color-info: #bb4d2a;
+    --color-juridico: #849d33;
+    --color-op: #c68229;
+    --color-os: #6948aa;
+
     /* Familias Tipográficas - Montserrat */
     --font-black: 'Montserrat-Black', sans-serif;
     --font-alt-bold: 'MontserratAlternates-Bold', sans-serif;

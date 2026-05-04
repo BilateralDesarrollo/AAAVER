@@ -597,8 +597,7 @@ header {
 .services-top {
     background-color: var(--azul-oscuro);
     background-image: url('../Elementos/Home/Servicios/ONDAS.png');
-    background-size: cover;
-    background-position: center;
+    background-position: left center;
     padding: 80px 5% 150px 5%;
     color: var(--blanco);
 }
@@ -680,12 +679,18 @@ header {
 
 .service-card {
     font-family: var(--font-identa-darkgray);
+    position: relative;
+    overflow: visible;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
-    padding: 25px 10px;
+    margin-top: 40px;
+    height: 110px;
+    padding: 0 10px 20px 10px;
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -693,21 +698,78 @@ header {
 }
 
 .service-card:hover {
-    border-color: var(--cian);
     transform: translateY(-5px);
     background: rgba(0, 45, 106, 0.8);
 }
 
-.service-card img {
-    height: 50px;
-    margin-bottom: 15px;
+.service-card.card-admin:hover { border-color: var(--color-admin); }
+.service-card.card-rh:hover { border-color: var(--color-rh); }
+.service-card.card-info:hover { border-color: var(--color-info); }
+.service-card.card-juridico:hover { border-color: var(--color-juridico); }
+.service-card.card-op:hover { border-color: var(--color-op); }
+.service-card.card-os:hover { border-color: var(--color-os); }
+
+.service-card .corner {
+    position: absolute;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    z-index: 0;
+    max-width: 35px; 
+}
+
+.service-card .corner.bottom-left {
+    bottom: -2px;
+    left: -2px;
+    border-bottom-left-radius: 12px;
+}
+.service-card .corner.top-right {
+    top: -2px;
+    right: -2px;
+    border-bottom-left-radius: 12px;
+}
+
+.service-card:hover .corner {
+    opacity: 1;
+}
+
+.service-card > img:not(.corner),
+.service-card > p {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card .icon-off, .service-card .icon-on {
+position: absolute;
+    top: -28px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+    height: 56px;
+    width: 56px; 
+    z-index: 2;
     transition: 0.3s;
+}
+
+.service-card .icon-on {
+    display: none;
+}
+
+.service-card:hover .icon-off {
+    display: none; 
+}
+
+.service-card:hover .icon-on {
+    display: block; 
+    margin: 0 auto;
 }
 
 .service-card p {
     font-family: var(--font-identa-darkgray);
     font-size: 13px;
     line-height: 1.2;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
 }
 
 .services-middle-wrapper {
